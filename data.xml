@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="sklad.xsl"?>
+<sklad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="obchod.xsd">
+
+    <procesor>
+        <vyrobce>Intel</vyrobce>
+        <typ>i5</typ>
+        <frekvence>4.5</frekvence>
+        <jadra>8</jadra>
+        <cena>8500</cena>
+    </procesor>
+    <operacni_pamet>
+        <vyrobce>HyperX</vyrobce>
+        <model>Fury</model>
+        <kapacita>16</kapacita>
+        <frekvence>3200</frekvence>
+        <casovani>CL16</casovani>
+        <cena>3899</cena>
+    </operacni_pamet>
+    <graficka_karta>
+        <vyrobce>NVDIA</vyrobce>
+        <rada>3</rada>
+        <model>3080</model>
+        <odber>750</odber>
+        <cena>35000</cena>
+    </graficka_karta>
+    <zakladni_deska>
+        <vyrobce>Asus</vyrobce>
+        <rozmer>ATX</rozmer>
+        <pocetM2>3</pocetM2>
+        <pocet_PCI-E16>4</pocet_PCI-E16>
+        <podsviceni>Ano</podsviceni>
+        <cena>4500</cena>
+    </zakladni_deska>
+    <zdroj>
+        <vyrobce>EVGA</vyrobce>
+        <vykon>1000</vykon>
+        <modularni>Ano</modularni>
+        <certifikace>80 Plus Gold</certifikace>
+        <cena>3500</cena>
+    </zdroj>
+</sklad>
