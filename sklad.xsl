@@ -4,10 +4,10 @@
         <html>
             <head>
                 <meta charset="utf-8"/>
-                <title>Moje auta</title>
+                <title>Skladové zásoby</title>
             </head>
             <body>
-                <h1>Koukni co jsem našel</h1>
+                <h1>Hardware ve skladu</h1>
                 <table style="width:100%">
                     <tr>
                         <td></td>
@@ -20,3 +20,6 @@
         </html>
     </xsl:template>
 </xsl:stylesheet>
+
+
+
