@@ -1,5 +1,5 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
-    <xs:element name="obchod">
+    <xs:element name="sklad">
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="procesor" minOccurs="0" maxOccurs="unbounded">
@@ -7,8 +7,56 @@
                         <xs:sequence>
                             <xs:element name="vyrobce" type="xs:string"/>
                             <xs:element name="typ" type="xs:string"/>
-                            <xs:element name="frekvence" type="xs:integer"/>
+                            <xs:element name="frekvence" type="xs:float"/>
                             <xs:element name="jadra" type="xs:integer"/>
+                            <xs:element name="cena" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="operacni_pamet" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="vyrobce" type="xs:string"/>
+                            <xs:element name="model" type="xs:string"/>
+                            <xs:element name="kapacita" type="xs:integer"/>
+                            <xs:element name="frekvence" type="xs:integer"/>
+                            <xs:element name="casovani" type="xs:string"/>
+                            <xs:element name="cena" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="graficka_karta" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="vyrobce" type="xs:string"/>
+                            <xs:element name="rada" type="xs:integer"/>
+                            <xs:element name="model" type="xs:string"/>
+                            <xs:element name="odber" type="xs:integer"/>
+                            <xs:element name="cena" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="zakladni_deska" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="vyrobce" type="xs:string"/>
+                            <xs:element name="model" type="xs:string"/>
+                            <xs:element name="rozmer" type="xs:string"/>
+                            <xs:element name="pocetM2" type="xs:integer"/>
+                            <xs:element name="pocet_PCI-E16" type="xs:integer"/>
+                            <xs:element name="podsviceni" type="xs:string"/>
+                            <xs:element name="cena" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="zdroj" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="vyrobce" type="xs:string"/>
+                            <xs:element name="model" type="xs:string"/>
+                            <xs:element name="vykon" type="xs:integer"/>
+                            <xs:element name="modularni" type="xs:string"/>
+                            <xs:element name="certifikace" type="xs:string"/>
                             <xs:element name="cena" type="xs:integer"/>
                         </xs:sequence>
                     </xs:complexType>

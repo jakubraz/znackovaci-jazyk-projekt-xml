@@ -2,13 +2,22 @@
 <?xml-stylesheet type="text/xsl" href="sklad.xsl"?>
 <sklad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="obchod.xsd">
 
+    <!-- -->
     <procesor>
         <vyrobce>Intel</vyrobce>
         <typ>i5</typ>
-        <frekvence>4.5</frekvence>
+        <frekvence>4.0</frekvence>
         <jadra>8</jadra>
         <cena>8500</cena>
     </procesor>
+    <procesor>
+        <vyrobce>AMD</vyrobce>
+        <typ>Ryzen 5</typ>
+        <frekvence>4.8</frekvence>
+        <jadra>16</jadra>
+        <cena>15000</cena>
+    </procesor>
+    <!-- -->
     <operacni_pamet>
         <vyrobce>HyperX</vyrobce>
         <model>Fury</model>
@@ -17,6 +26,15 @@
         <casovani>CL16</casovani>
         <cena>3899</cena>
     </operacni_pamet>
+    <operacni_pamet>
+        <vyrobce>G.Skill</vyrobce>
+        <model>TridentZ</model>
+        <kapacita>32</kapacita>
+        <frekvence>4000</frekvence>
+        <casovani>CL14</casovani>
+        <cena>5699</cena>
+    </operacni_pamet>
+    <!-- -->
     <graficka_karta>
         <vyrobce>NVDIA</vyrobce>
         <rada>3</rada>
@@ -24,16 +42,20 @@
         <odber>750</odber>
         <cena>35000</cena>
     </graficka_karta>
+    <!-- -->
     <zakladni_deska>
         <vyrobce>Asus</vyrobce>
+        <model>Prime Z490A</model>
         <rozmer>ATX</rozmer>
         <pocetM2>3</pocetM2>
         <pocet_PCI-E16>4</pocet_PCI-E16>
         <podsviceni>Ano</podsviceni>
         <cena>4500</cena>
     </zakladni_deska>
+    <!-- -->
     <zdroj>
         <vyrobce>EVGA</vyrobce>
+        <model>Supernova</model>
         <vykon>1000</vykon>
         <modularni>Ano</modularni>
         <certifikace>80 Plus Gold</certifikace>
