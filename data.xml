@@ -2,23 +2,37 @@
 <?xml-stylesheet type="text/xsl" href="sklad.xsl"?>
 <sklad xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="obchod.xsd">
 
-    <!-- -->
-    <procesor>
+    <!-- Procesory -->
+    <procesor id="1" kategorie="stredni_trida">
         <vyrobce>Intel</vyrobce>
         <typ>i5</typ>
         <frekvence>4.0</frekvence>
         <jadra>8</jadra>
         <cena>8500</cena>
     </procesor>
-    <procesor>
+    <procesor id="2" kategorie="stredni_trida">
         <vyrobce>AMD</vyrobce>
         <typ>Ryzen 5</typ>
-        <frekvence>4.8</frekvence>
+        <frekvence>4.1</frekvence>
         <jadra>16</jadra>
-        <cena>15000</cena>
+        <cena>4600</cena>
     </procesor>
-    <!-- -->
-    <operacni_pamet>
+    <procesor id="3" kategorie="high_end">
+        <vyrobce>AMD</vyrobce>
+        <typ>Ryzen 9</typ>
+        <frekvence>4.8</frekvence>
+        <jadra>32</jadra>
+        <cena>15500</cena>
+    </procesor>
+    <procesor id="4" kategorie="high_end">
+        <vyrobce>Intel</vyrobce>
+        <typ>i9</typ>
+        <frekvence>5.0</frekvence>
+        <jadra>24</jadra>
+        <cena>12300</cena>
+    </procesor>
+    <!-- Operační paměti -->
+    <operacni_pamet XMP_2.0="Ano">
         <vyrobce>HyperX</vyrobce>
         <model>Fury</model>
         <kapacita>16</kapacita>
@@ -26,7 +40,7 @@
         <casovani>CL16</casovani>
         <cena>3899</cena>
     </operacni_pamet>
-    <operacni_pamet>
+    <operacni_pamet XMP_2.0="Ano">
         <vyrobce>G.Skill</vyrobce>
         <model>TridentZ</model>
         <kapacita>32</kapacita>
@@ -34,16 +48,34 @@
         <casovani>CL14</casovani>
         <cena>5699</cena>
     </operacni_pamet>
-    <!-- -->
-    <graficka_karta>
+    <operacni_pamet XMP_2.0="Ne">
+        <vyrobce>Corsair</vyrobce>
+        <model>Vengeance LPX</model>
+        <kapacita>32</kapacita>
+        <frekvence>3200</frekvence>
+        <casovani>CL16</casovani>
+        <cena>3490</cena>
+    </operacni_pamet>
+
+    <!-- Grafické karty -->
+
+    <graficka_karta id="1" kategorie="high_end">
         <vyrobce>NVDIA</vyrobce>
-        <rada>3</rada>
+        <rada>RTX</rada>
         <model>3080</model>
         <odber>750</odber>
         <cena>35000</cena>
     </graficka_karta>
-    <!-- -->
-    <zakladni_deska>
+
+    <graficka_karta id="2" kategorie="stredni_trida">
+        <vyrobce>AMD</vyrobce>
+        <rada>SAPHIRE</rada>
+        <model>6800</model>
+        <odber>450</odber>
+        <cena>12500</cena>
+    </graficka_karta>
+    <!-- Základní deska -->
+    <zakladni_deska socket="Z490" bluetooth="Ano">
         <vyrobce>Asus</vyrobce>
         <model>Prime Z490A</model>
         <rozmer>ATX</rozmer>
@@ -52,13 +84,30 @@
         <podsviceni>Ano</podsviceni>
         <cena>4500</cena>
     </zakladni_deska>
-    <!-- -->
-    <zdroj>
+    <zakladni_deska socket="AM4" bluetooth="Ne">
+        <vyrobce>MSI</vyrobce>
+        <model>MAG B550 TOMAHAWK</model>
+        <rozmer>mITX</rozmer>
+        <pocetM2>2</pocetM2>
+        <pocet_PCI-E16>1</pocet_PCI-E16>
+        <podsviceni>Ano</podsviceni>
+        <cena>3599</cena>
+    </zakladni_deska>
+    <!-- Zdroje -->
+    <zdroj prepetova_ochrana="Ano">
         <vyrobce>EVGA</vyrobce>
         <model>Supernova</model>
         <vykon>1000</vykon>
         <modularni>Ano</modularni>
         <certifikace>80 Plus Gold</certifikace>
         <cena>3500</cena>
+    </zdroj>
+    <zdroj prepetova_ochrana="Ano">
+        <vyrobce>Corsair</vyrobce>
+        <model>RM850</model>
+        <vykon>850</vykon>
+        <modularni>Ne</modularni>
+        <certifikace>80 Plus Gold</certifikace>
+        <cena>2990</cena>
     </zdroj>
 </sklad>

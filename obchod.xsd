@@ -7,10 +7,12 @@
                         <xs:sequence>
                             <xs:element name="vyrobce" type="xs:string"/>
                             <xs:element name="typ" type="xs:string"/>
-                            <xs:element name="frekvence" type="xs:float"/>
+                            <xs:element name="frekvence" type="frekvenceCPU"/>
                             <xs:element name="jadra" type="xs:integer"/>
-                            <xs:element name="cena" type="xs:integer"/>
+                            <xs:element name="cena" type="cena"/>
                         </xs:sequence>
+                        <xs:attribute name="id" type="xs:integer"/>
+                        <xs:attribute name="kategorie" type="xs:string"/>
                     </xs:complexType>
                 </xs:element>
                 <xs:element name="operacni_pamet" minOccurs="0" maxOccurs="unbounded">
@@ -19,21 +21,24 @@
                             <xs:element name="vyrobce" type="xs:string"/>
                             <xs:element name="model" type="xs:string"/>
                             <xs:element name="kapacita" type="xs:integer"/>
-                            <xs:element name="frekvence" type="xs:integer"/>
+                            <xs:element name="frekvence" type="frekvenceRAM"/>
                             <xs:element name="casovani" type="xs:string"/>
-                            <xs:element name="cena" type="xs:integer"/>
+                            <xs:element name="cena" type="cena"/>
                         </xs:sequence>
+                        <xs:attribute name="XMP_2.0" type="vyber"/>
                     </xs:complexType>
                 </xs:element>
                 <xs:element name="graficka_karta" minOccurs="0" maxOccurs="unbounded">
                     <xs:complexType>
                         <xs:sequence>
                             <xs:element name="vyrobce" type="xs:string"/>
-                            <xs:element name="rada" type="xs:integer"/>
+                            <xs:element name="rada" type="xs:string"/>
                             <xs:element name="model" type="xs:string"/>
                             <xs:element name="odber" type="xs:integer"/>
-                            <xs:element name="cena" type="xs:integer"/>
+                            <xs:element name="cena" type="cena"/>
                         </xs:sequence>
+                        <xs:attribute name="id" type="xs:integer"/>
+                        <xs:attribute name="kategorie" type="xs:string"/>
                     </xs:complexType>
                 </xs:element>
                 <xs:element name="zakladni_deska" minOccurs="0" maxOccurs="unbounded">
@@ -44,9 +49,11 @@
                             <xs:element name="rozmer" type="xs:string"/>
                             <xs:element name="pocetM2" type="xs:integer"/>
                             <xs:element name="pocet_PCI-E16" type="xs:integer"/>
-                            <xs:element name="podsviceni" type="xs:string"/>
-                            <xs:element name="cena" type="xs:integer"/>
+                            <xs:element name="podsviceni" type="vyber"/>
+                            <xs:element name="cena" type="cena"/>
                         </xs:sequence>
+                        <xs:attribute name="socket" type="xs:string"/>
+                        <xs:attribute name="bluetooth" type="vyber"/>
                     </xs:complexType>
                 </xs:element>
                 <xs:element name="zdroj" minOccurs="0" maxOccurs="unbounded">
@@ -55,13 +62,40 @@
                             <xs:element name="vyrobce" type="xs:string"/>
                             <xs:element name="model" type="xs:string"/>
                             <xs:element name="vykon" type="xs:integer"/>
-                            <xs:element name="modularni" type="xs:string"/>
+                            <xs:element name="modularni" type="vyber"/>
                             <xs:element name="certifikace" type="xs:string"/>
-                            <xs:element name="cena" type="xs:integer"/>
+                            <xs:element name="cena" type="cena"/>
                         </xs:sequence>
+                        <xs:attribute name="prepetova_ochrana" type="vyber"/>
                     </xs:complexType>
                 </xs:element>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
+    <!-- Vlastní datové typy -->
+    <xs:simpleType name="frekvenceCPU">
+        <xs:restriction base="xs:float">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="8"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="frekvenceRAM">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1600"/>
+            <xs:maxInclusive value="4600"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="cena">
+        <xs:restriction base="xs:float">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="100000"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="vyber">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Ano"/>
+            <xs:enumeration value="Ne"/>
+        </xs:restriction>
+    </xs:simpleType>
 </xs:schema>
