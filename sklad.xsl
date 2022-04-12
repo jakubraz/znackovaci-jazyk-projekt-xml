@@ -16,6 +16,7 @@
                         <th>Typ</th>
                         <th>Frekvence</th>
                         <th>Jádra</th>
+                        <th>Otevřený násobič</th>
                         <th>Cena</th>
                     </tr>
                     <xsl:for-each select="/sklad/procesor">
@@ -25,6 +26,7 @@
                             <td><xsl:value-of select="typ"/></td>
                             <td><xsl:value-of select="frekvence"/></td>
                             <td><xsl:value-of select="jadra"/></td>
+                            <td><xsl:value-of select="otevreny_nasobic"/></td>
                             <td><xsl:value-of select="cena"/></td>
                         </tr>
                         </xsl:if>

@@ -8,6 +8,7 @@
         <typ>i5</typ>
         <frekvence>4.0</frekvence>
         <jadra>8</jadra>
+        <otevreny_nasobic>Ne</otevreny_nasobic>
         <cena>8500</cena>
     </procesor>
     <procesor id="2" kategorie="stredni_trida">
@@ -15,6 +16,7 @@
         <typ>Ryzen 5</typ>
         <frekvence>4.1</frekvence>
         <jadra>16</jadra>
+        <otevreny_nasobic>Ne</otevreny_nasobic>
         <cena>4600</cena>
     </procesor>
     <procesor id="3" kategorie="high_end">
@@ -22,6 +24,7 @@
         <typ>Ryzen 9</typ>
         <frekvence>4.8</frekvence>
         <jadra>32</jadra>
+        <otevreny_nasobic>Ano</otevreny_nasobic>
         <cena>15500</cena>
     </procesor>
     <procesor id="4" kategorie="high_end">
@@ -29,6 +32,7 @@
         <typ>i9</typ>
         <frekvence>5.0</frekvence>
         <jadra>24</jadra>
+        <otevreny_nasobic>Ano</otevreny_nasobic>
         <cena>12300</cena>
     </procesor>
     <!-- Operační paměti -->

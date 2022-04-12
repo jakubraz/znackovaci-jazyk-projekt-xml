@@ -9,6 +9,7 @@
                             <xs:element name="typ" type="xs:string"/>
                             <xs:element name="frekvence" type="frekvenceCPU"/>
                             <xs:element name="jadra" type="xs:integer"/>
+                            <xs:element name="otevreny_nasobic" type="vyber"/>
                             <xs:element name="cena" type="cena"/>
                         </xs:sequence>
                         <xs:attribute name="id" type="xs:integer"/>
