@@ -63,7 +63,7 @@
 
     <!-- Grafické karty -->
 
-    <graficka_karta id="1" kategorie="high_end">
+    <graficka_karta id="5" kategorie="high_end">
         <vyrobce>NVDIA</vyrobce>
         <rada>RTX</rada>
         <model>3080</model>
@@ -71,7 +71,7 @@
         <cena>35000</cena>
     </graficka_karta>
 
-    <graficka_karta id="2" kategorie="stredni_trida">
+    <graficka_karta id="6" kategorie="stredni_trida">
         <vyrobce>AMD</vyrobce>
         <rada>SAPHIRE</rada>
         <model>6800</model>
