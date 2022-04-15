@@ -67,14 +67,18 @@
         <vyrobce>NVDIA</vyrobce>
         <rada>RTX</rada>
         <model>3080</model>
+        <delka_gpu>300</delka_gpu>
+        <hloubka_gpu>137</hloubka_gpu>
         <odber>750</odber>
         <cena>35000</cena>
     </graficka_karta>
 
     <graficka_karta id="6" kategorie="stredni_trida">
         <vyrobce>AMD</vyrobce>
-        <rada>SAPHIRE</rada>
+        <rada>RX</rada>
         <model>6800</model>
+        <delka_gpu>286</delka_gpu>
+        <hloubka_gpu>112</hloubka_gpu>
         <odber>450</odber>
         <cena>12500</cena>
     </graficka_karta>

@@ -35,6 +35,7 @@
                             <xs:element name="vyrobce" type="xs:string"/>
                             <xs:element name="rada" type="xs:string"/>
                             <xs:element name="model" type="xs:string"/>
+                            <xs:group ref="rozmery_gpu"/>
                             <xs:element name="odber" type="xs:integer"/>
                             <xs:element name="cena" type="cena"/>
                         </xs:sequence>
@@ -99,4 +100,10 @@
             <xs:enumeration value="Ne"/>
         </xs:restriction>
     </xs:simpleType>
+    <xs:group name="rozmery_gpu">
+        <xs:sequence>
+            <xs:element name="delka_gpu" type="xs:integer"/>
+            <xs:element name="hloubka_gpu" type="xs:integer"/>
+        </xs:sequence>
+    </xs:group>
 </xs:schema>
