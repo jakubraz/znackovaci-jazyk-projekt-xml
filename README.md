@@ -1,6 +1,6 @@
 # znackovaci-jazyk-projekt-xml 
 Semestrální projekt na předmět Značkovací jazyky - XML, XSD, XSLT
-
+###### Cvičení - Čtvrtek, Lichý týden - 15:45, Autor: Jakub Ráž
 ### Zadání:
 
 - XML - soubor s daty, obsahovat bude cca 20 (různých) elementů, 5 atributů, 10 entit (myšleno záznamů - jako v databázi)
